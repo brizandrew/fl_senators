@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title>FL Senators</title>
+</head>
+
+<body>
+<div id="container">
+
+<h1>Florida State Senators</h1>
+
+<ul>
+	{% for senator in senators %}
+		<li><a href="/senators/{{ senator['lname'] }}">{{ senator['fname'] + ' ' + senator['lname'] }}</a></li>
+	{% endfor %}
+</ul>
+
+</div> <!-- close container -->
+
+</body>
+</html>
